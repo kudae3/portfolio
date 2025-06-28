@@ -67,7 +67,7 @@ const Hero = () => {
           <Link
             className="hover:text-slate-50 duration-300"
             target="_blank"
-            href={"https://github.com/kudae3"}
+            href={"https://wa.me/959751025121"}
           >
             WhatsApp
           </Link>

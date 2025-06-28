@@ -25,10 +25,7 @@ const About = () => {
               </h3>
               <p className="text-gray-300 leading-7">
                 I&apos;m a passionate full-stack web developer with a love for
-                creating innovative and user-friendly digital experiences. My
-                journey in programming started with curiosity and has evolved
-                into a deep commitment to building solutions that make a
-                difference.
+                creating innovative and user-friendly digital experiences.
               </p>
             </div>
 
