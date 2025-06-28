@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Work from "./components/Work";
+import ContactUs from "./components/ContactUs";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Hero />
       <About />
       <Work />
+      <ContactUs />
     </>
   );
 };
