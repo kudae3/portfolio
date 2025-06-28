@@ -26,10 +26,13 @@ const Hero = () => {
             front-end and back-end technologies, & I&apos;m always eager to
             learn new tools and frameworks to improve my skills.
           </p>
-          <div className="flex items-center justify-center md:justify-start gap-3 font-medium">
-            <div>
-              <p>Download Resume</p>
-            </div>
+          <div className="flex items-center justify-center md:justify-start space-x-4 font-medium">
+            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl">
+                Download Resume
+              </span>
+            </button>
             <div className="flex justify-center items-center gap-2">
               <p className="text-sm">SEE MY WORKS</p>
               <svg
@@ -51,7 +54,7 @@ const Hero = () => {
         </div>
       </div>
       {/* social */}
-      <div className="flex justify-between items-end px-7 md:pb-[130px] text-slate-300 text-sm">
+      <div className="flex justify-between items-end mt-10 md:mt-0 px-7 md:pb-[130px] text-slate-300 text-sm">
         <div className="flex items-center ">
           <Link
             className="hover:text-slate-50 duration-300"
