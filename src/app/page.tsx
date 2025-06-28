@@ -9,10 +9,18 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Work />
-      <ContactUs />
+      <div id="intro">
+        <Hero />
+      </div>
+      <div id="about" className="pt-7">
+        <About />
+      </div>
+      <div id="work" className="pt-7">
+        <Work />
+      </div>
+      <div id="contact" className="pt-7">
+        <ContactUs />
+      </div>
     </>
   );
 };

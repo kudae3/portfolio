@@ -33,7 +33,10 @@ const Hero = () => {
                 Download Resume
               </span>
             </button>
-            <button className="flex justify-center items-center gap-2 cursor-pointer">
+            <a
+              href="#work"
+              className="flex justify-center items-center gap-2 cursor-pointer"
+            >
               <p className="text-sm">SEE MY WORKS</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +52,7 @@ const Hero = () => {
                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

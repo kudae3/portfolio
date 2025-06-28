@@ -5,10 +5,26 @@ const Navbar = () => {
     <div className="flex justify-between items-center max-w-7xl p-5 mx-auto ">
       <div>my portfolio</div>
       <ul className="hidden md:flex space-x-7 text-[15px]">
-        <li>Intro</li>
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li>
+          <a href="#intro" className="hover:underline">
+            Intro
+          </a>
+        </li>
+        <li>
+          <a href="#about" className="hover:underline">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#work" className="hover:underline">
+            Work
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="hover:underline">
+            Contact
+          </a>
+        </li>
       </ul>
       {/* mobile */}
       <div className="block md:hidden">
