@@ -27,6 +27,6 @@ body {
 
 @layer utilities {
   .container {
-    @apply max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-28 px-5 bg-white dark:bg-slate-950;
+    @apply max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-0 px-5;
   }
 }

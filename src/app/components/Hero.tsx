@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="container">
-      <div className="px-7 grid md:grid-cols-2 md:items-center gap-12">
+    <section className="container flex flex-col space-y-5">
+      <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
         <div className="order-1 md:order-2">
           <Image
             src="/test.jpg"
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
       {/* social */}
-      <div className="flex justify-between items-end mt-20 md:mt-32 text-slate-300">
+      <div className="flex justify-between items-end px-7 md:pb-[130px] text-slate-300 text-sm">
         <div className="flex items-center ">
           <Link
             className="hover:text-slate-50 duration-300"
@@ -62,6 +62,14 @@ const Hero = () => {
             href={"https://github.com/kudae3"}
           >
             Github
+          </Link>
+          <span className="mx-2">/</span>
+          <Link
+            className="hover:text-slate-50 duration-300"
+            target="_blank"
+            href={"https://github.com/kudae3"}
+          >
+            WhatsApp
           </Link>
         </div>
         {/* Scroll Down */}

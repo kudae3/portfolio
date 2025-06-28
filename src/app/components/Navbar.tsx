@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center max-w-7xl py-10 mx-auto px-5">
+    <div className="flex justify-between items-center max-w-7xl p-5 mx-auto ">
       <div>my portfolio</div>
       <ul className="hidden md:flex space-x-7 text-[15px]">
         <li>Intro</li>
