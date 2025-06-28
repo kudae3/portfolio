@@ -42,7 +42,7 @@ const projects = [
       <SiClerk key="clerk" className="text-blue-600 text-xl" />,
     ],
     image: "/projects/corporate.png",
-    link: "https://github.com/kudae3/digital-tide",
+    link: "https://youtu.be/7fTBW_BLmHM?si=qBGzzJhFgb57-mnw",
   },
   {
     title: "Hyper UI",
