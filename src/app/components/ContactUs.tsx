@@ -1,10 +1,14 @@
 "use client";
 
+import axios from "axios";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const ContactUs = () => {
+  const [isSending, setisSending] = useState(false);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setisSending(true);
     e.preventDefault();
     const form = new FormData(e.target as HTMLFormElement);
 
@@ -15,18 +19,32 @@ const ContactUs = () => {
       message: form.get("message"),
     };
 
-    const res = await fetch("http://localhost:3000/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    await axios
+      .post("http://localhost:3000/api/contact", {
+        ...formData,
+      })
+      .then(() => {
+        toast.success("Message sent!");
+        (e.target as HTMLFormElement).reset();
+        setisSending(false);
+      })
+      .catch(() => {
+        toast.error("Failed to send message.");
+        setisSending(false);
+      });
 
-    if (res.ok) {
-      alert("Message sent!");
-      (e.target as HTMLFormElement).reset();
-    } else {
-      alert("Failed to send message.");
-    }
+    // const res = await fetch("http://localhost:3000/api/contact", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(formData),
+    // });
+
+    // if (res.ok) {
+    //   toast.success("Message sent!");
+    //   (e.target as HTMLFormElement).reset();
+    // } else {
+    //   toast.error("Failed to send message.");
+    // }
   };
 
   return (
@@ -119,7 +137,7 @@ const ContactUs = () => {
                 name="name"
                 type="text"
                 required
-                className="w-full px-4 py-3 border-b border-gray-400 hover:border-indigo-400 focus:border-indigo-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 border-b border-gray-400 hover:border-green-400 focus:border-green-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Your Name"
               />
             </div>
@@ -135,7 +153,7 @@ const ContactUs = () => {
                 name="email"
                 type="email"
                 required
-                className="w-full px-4 py-3 border-b border-gray-400 hover:border-indigo-400 focus:border-indigo-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 border-b border-gray-400 hover:border-green-400 focus:border-green-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="you@email.com"
               />
             </div>
@@ -151,7 +169,7 @@ const ContactUs = () => {
                 name="title"
                 type="text"
                 required
-                className="w-full px-4 py-3 border-b border-gray-400 hover:border-indigo-400 focus:border-indigo-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 border-b border-gray-400 hover:border-green-400 focus:border-green-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Subject"
               />
             </div>
@@ -167,12 +185,12 @@ const ContactUs = () => {
                 name="message"
                 type="text"
                 required
-                className="w-full px-4 py-3 border-b border-gray-400 hover:border-indigo-400 focus:border-indigo-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 border-b border-gray-400 hover:border-green-400 focus:border-green-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Subject"
               />
             </div>
-            <button className="px-4 py-3 cursor-pointer rounded-md bg-indigo-800 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-              Send Message
+            <button className="px-4 py-3 cursor-pointer rounded-md bg-green-800 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+              {isSending ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
