@@ -4,6 +4,31 @@ import Image from "next/image";
 import React from "react";
 
 const ContactUs = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = new FormData(e.target as HTMLFormElement);
+
+    const formData = {
+      name: form.get("name"),
+      email: form.get("email"),
+      title: form.get("title"),
+      message: form.get("message"),
+    };
+
+    const res = await fetch("http://localhost:3000/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      alert("Message sent!");
+      (e.target as HTMLFormElement).reset();
+    } else {
+      alert("Failed to send message.");
+    }
+  };
+
   return (
     <section className="max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-0 px-5 mb-10">
       <div className="px-7 ">
@@ -79,8 +104,8 @@ const ContactUs = () => {
           </div>
           {/* Main Content */}
           <form
+            onSubmit={handleSubmit}
             className="bg-slate-950 rounded-xl w-full shadow-lg p-0 md:p-5 flex flex-col gap-5 space-y-10"
-            onSubmit={(e) => e.preventDefault()}
           >
             <div>
               <label
@@ -119,7 +144,7 @@ const ContactUs = () => {
                 className="block text-gray-700 dark:text-gray-200 text-sm font-semibold mb-2"
                 htmlFor="title"
               >
-                Subject
+                Title
               </label>
               <input
                 id="title"
@@ -138,20 +163,14 @@ const ContactUs = () => {
                 Message
               </label>
               <input
-                id="title"
-                name="title"
+                id="message"
+                name="message"
                 type="text"
                 required
                 className="w-full px-4 py-3 border-b border-gray-400 hover:border-indigo-400 focus:border-indigo-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Subject"
               />
             </div>
-            {/* <button
-              type="submit"
-              className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
-            >
-              Send Message
-            </button> */}
             <button className="px-4 py-3 cursor-pointer rounded-md bg-indigo-800 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
               Send Message
             </button>
