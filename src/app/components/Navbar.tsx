@@ -12,6 +12,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState("intro");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,7 +66,7 @@ const Navbar = () => {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div>my portfolio</div>
+      <div>Kudae&#39;s Portfolio</div>
       <ul className="hidden md:flex space-x-7 text-[15px]">
         {NAV_ITEMS.map((item) => (
           <li key={item.id} className="flex flex-col items-center">
@@ -82,8 +83,56 @@ const Navbar = () => {
         ))}
       </ul>
       {/* mobile */}
-      <div className="block md:hidden">
-        <p>Dropdown goes here</p>
+      <div className="block md:hidden relative">
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="text-white hover:text-slate-300 duration-300"
+          aria-label="Toggle mobile menu"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isMobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+
+        {isMobileMenuOpen && (
+          <div className="absolute top-full right-0 mt-2 w-48 bg-black border border-gray-700 rounded-md shadow-lg">
+            <ul className="py-2">
+              {NAV_ITEMS.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    className="block px-4 py-2 text-sm hover:bg-gray-800 hover:text-slate-300 duration-300 flex items-center justify-between"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                    {activeSection === item.id && (
+                      <span className="w-1 h-1 rounded-full bg-white"></span>
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </header>
   );

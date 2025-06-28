@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="container flex flex-col space-y-5">
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
-        <div className="order-1 md:order-2 pt-5 md:pt-0">
+        <div className="order-1 md:order-2 mt-5 md:mt-0">
           <Image
             src="/test.jpg"
             alt="my profile"
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="space-y-7 text-center md:text-left order-2 md:order-1">
-          <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl text-white">
+          <h1 className="text-3xl font-bold sm:text-3xl md:text-5xl text-white">
             Full-stack web developer
           </h1>
           <p className="md:text-[17px] text-gray-200 leading-10">
@@ -28,9 +28,9 @@ const Hero = () => {
           </p>
           <div className="flex items-center justify-center md:justify-start space-x-4 font-medium">
             <a href="/Kudae-Sithu-Resume.pdf" download>
-              <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px]">
+              <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs text-white backdrop-blur-3xl">
                   Download Resume
                 </span>
               </button>
@@ -40,7 +40,7 @@ const Hero = () => {
               href="#work"
               className="flex justify-center items-center gap-2 cursor-pointer"
             >
-              <p className="text-sm">SEE MY WORKS</p>
+              <p className="text-xs">SEE MY WORKS</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -87,7 +87,7 @@ const Hero = () => {
           </Link>
         </div>
         {/* Scroll Down */}
-        <div className="hover:text-slate-50 duration-300 cursor-pointer">
+        {/* <div className="hover:text-slate-50 duration-300 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -102,7 +102,7 @@ const Hero = () => {
               d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
     </section>
   );
