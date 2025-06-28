@@ -10,6 +10,7 @@ import { SiExpress } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const projects = [
   {
@@ -20,6 +21,7 @@ const projects = [
       <FaNode key="node" className="text-green-600 text-xl" />,
       <SiExpress key="express" className="text-gray-400 text-xl" />,
       <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
+      <IoLogoJavascript key="javascript" className="text-yellow-300 text-xl" />,
     ],
     image: "/projects/code.jpg",
     link: "https://github.com/kudae3/Subscription-tracker",
@@ -53,6 +55,7 @@ const projects = [
       />,
       <RiTailwindCssFill key="tailwind" className="text-cyan-500 text-xl" />,
       <FaReact key="react" className="text-sky-500 text-xl" />,
+      <IoLogoJavascript key="javascript" className="text-yellow-300 text-xl" />,
     ],
     image: "/projects/hyperUI.png",
     link: "https://www.hyperui.dev/components/application/modals",
