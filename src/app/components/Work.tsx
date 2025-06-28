@@ -1,13 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
+import { SiClerk } from "react-icons/si";
 
 const projects = [
   {
     title: "Subscription Management System",
     description:
       "Node.js backend system with robust APIs for managing subscriptions, payments, and user accounts, including validation and secure data handling.",
-    techStack: ["Node.js"],
+    techStack: [
+      <FaNode key="node" className="text-green-600 text-xl" />,
+      <SiExpress key="express" className="text-gray-400 text-xl" />,
+      <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
+    ],
     image: "/projects/code.jpg",
     link: "https://github.com/kudae3/Subscription-tracker",
   },
@@ -15,7 +28,17 @@ const projects = [
     title: "Corporate Web Application",
     description:
       "A full-stack Next.js job board app featuring job management by admin, and secure user authentication with Clerk.",
-    techStack: ["Next.js", "Tailwind CSS", "MongoDB"],
+    techStack: [
+      <RiNextjsFill
+        key="nextjs"
+        className="text-black dark:text-white text-xl"
+      />,
+      <RiTailwindCssFill key="tailwind" className="text-cyan-500 text-xl" />,
+      <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
+      <SiTypescript key="typescript" className="text-blue-500 text-xl" />,
+      <SiShadcnui key="shadcn" className="text-purple-500 text-xl" />,
+      <SiClerk key="clerk" className="text-blue-600 text-xl" />,
+    ],
     image: "/projects/corporate.png",
     link: "https://github.com/kudae3/digital-tide",
   },
@@ -23,7 +46,14 @@ const projects = [
     title: "Hyper UI",
     description:
       "Contributed to Hyper UI by developing modal components with advanced input fields, improving usability and accessibility.",
-    techStack: ["Next.js", "Tailwind CSS"],
+    techStack: [
+      <RiNextjsFill
+        key="nextjs"
+        className="text-black dark:text-white text-xl"
+      />,
+      <RiTailwindCssFill key="tailwind" className="text-cyan-500 text-xl" />,
+      <FaReact key="react" className="text-sky-500 text-xl" />,
+    ],
     image: "/projects/hyperUI.png",
     link: "https://www.hyperui.dev/components/application/modals",
   },
@@ -72,7 +102,7 @@ const Work = () => (
                 {project.techStack.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                    className="inline-flex items-center rounded-full bg-gray-100 p-2 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300"
                   >
                     {tech}
                   </span>
