@@ -32,15 +32,19 @@ const Navbar = () => {
 
       setLastScrollY(currentScrollY);
 
-      // Determine active section
+      let maxVisible = 0;
       let found = "intro";
+      const viewportHeight = window.innerHeight;
+
       for (const item of NAV_ITEMS) {
         const el = document.getElementById(item.id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 80 && rect.bottom > 80) {
+          const visible =
+            Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+          if (visible > maxVisible && visible > 0) {
+            maxVisible = visible;
             found = item.id;
-            break;
           }
         }
       }
