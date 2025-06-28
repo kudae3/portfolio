@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="container flex flex-col space-y-5">
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-2 pt-5 md:pt-0">
           <Image
             src="/test.jpg"
             alt="my profile"

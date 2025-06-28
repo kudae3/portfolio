@@ -1,9 +1,18 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
+const NAV_ITEMS = [
+  { id: "intro", label: "Intro" },
+  { id: "about", label: "About" },
+  { id: "work", label: "Work" },
+  { id: "contact", label: "Contact" },
+];
+
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [activeSection, setActiveSection] = useState("intro");
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -22,9 +31,26 @@ const Navbar = () => {
       }
 
       setLastScrollY(currentScrollY);
+
+      // Determine active section
+      let found = "intro";
+      for (const item of NAV_ITEMS) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            found = item.id;
+            break;
+          }
+        }
+      }
+      setActiveSection(found);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Initial check
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
@@ -37,26 +63,19 @@ const Navbar = () => {
     >
       <div>my portfolio</div>
       <ul className="hidden md:flex space-x-7 text-[15px]">
-        <li>
-          <a href="#intro" className="hover:underline">
-            Intro
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="hover:underline">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#work" className="hover:underline">
-            Work
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="hover:underline">
-            Contact
-          </a>
-        </li>
+        {NAV_ITEMS.map((item) => (
+          <li key={item.id} className="flex flex-col items-center">
+            <a
+              href={`#${item.id}`}
+              className="hover:text-slate-300 duration-300"
+            >
+              {item.label}
+            </a>
+            {activeSection === item.id && (
+              <span className="w-1 h-1 rounded-full bg-white mt-1"></span>
+            )}
+          </li>
+        ))}
       </ul>
       {/* mobile */}
       <div className="block md:hidden">
