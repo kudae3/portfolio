@@ -21,16 +21,6 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold text-white mb-4">
-                Who I Am
-              </h3>
-              <p className="text-gray-300 leading-7">
-                I&apos;m a passionate full-stack web developer with a love for
-                creating innovative and user-friendly digital experiences.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-4">
                 My Mission
               </h3>
               <p className="text-gray-300 leading-7">
