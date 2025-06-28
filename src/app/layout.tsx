@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { StarsBackground } from "./components/ui/stars-background";
+import { ShootingStars } from "./components/ui/shooting-stars";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body>
-        <Toaster position="top-right" /> {children}
+        <div className="min-h-screen">
+          {children}
+          <ShootingStars />
+          <StarsBackground />
+        </div>
+        <Toaster position="top-right" />
       </body>
     </html>
   );

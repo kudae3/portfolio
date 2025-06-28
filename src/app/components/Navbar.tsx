@@ -120,7 +120,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="block px-4 py-2 text-sm hover:bg-gray-800 hover:text-slate-300 duration-300 flex items-center justify-between"
+                    className="px-4 py-2 text-sm hover:bg-gray-800 hover:text-slate-300 duration-300 flex items-center justify-between"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
