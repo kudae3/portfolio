@@ -32,19 +32,6 @@ const ContactUs = () => {
         toast.error("Failed to send message.");
         setisSending(false);
       });
-
-    // const res = await fetch("http://localhost:3000/api/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(formData),
-    // });
-
-    // if (res.ok) {
-    //   toast.success("Message sent!");
-    //   (e.target as HTMLFormElement).reset();
-    // } else {
-    //   toast.error("Failed to send message.");
-    // }
   };
 
   return (
@@ -189,7 +176,7 @@ const ContactUs = () => {
                 placeholder="Subject"
               />
             </div>
-            <button className="px-4 py-3 cursor-pointer rounded-md bg-green-800 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+            <button className="px-4 py-3 cursor-pointer rounded-xl bg-green-800 text-white text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
               {isSending ? "Sending..." : "Send Message"}
             </button>
           </form>
