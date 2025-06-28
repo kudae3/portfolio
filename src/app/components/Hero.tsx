@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-10">
         <div className="order-1 md:order-2">
           <Image
-            src="/photo.png"
+            src="/test.jpg"
             alt="my profile"
             width={300}
             height={300}
@@ -25,6 +25,7 @@ const Hero = () => {
             front-end and back-end technologies, & I&apos;m always eager to
             learn new tools and frameworks to improve my skills.
           </p>
+          <div>View my works</div>
         </div>
       </div>
     </section>
