@@ -14,11 +14,11 @@ const Hero = () => {
         <div className="order-1 md:order-2 mt-5 md:mt-0">
           <AnimatedContent direction="horizontal">
             <Image
-              src="/test.jpg"
+              src="/profile.png"
               alt="my profile"
-              width={300}
-              height={300}
-              className="object-cover mx-auto rounded-xl"
+              width={250}
+              height={250}
+              className="object-cover mx-auto rounded-2xl"
             />
           </AnimatedContent>
         </div>
@@ -31,6 +31,7 @@ const Hero = () => {
             to={{ opacity: 1, y: 0 }}
             threshold={0.1}
             rootMargin="-100px"
+            textAlign="center"
           />
 
           <ShinyText
