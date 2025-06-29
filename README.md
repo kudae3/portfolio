@@ -11,7 +11,6 @@ A modern, responsive portfolio website built with Next.js, React, and Tailwind C
 - [Tech Stack](#tech-stack)
 - [Showcase](#showcase)
 - [Contact](#contact)
-- [Contributing](#contributing)
 
 ---
 
