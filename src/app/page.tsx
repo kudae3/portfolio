@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Work from "./components/Work";
-import ContactUs from "./components/ContactUs";
+import ContactMe from "./components/ContactMe";
 
 const page = () => {
   return (
@@ -15,11 +15,11 @@ const page = () => {
       <div id="about" className="pt-7">
         <About />
       </div>
-      <div id="work" className="pt-7">
+      <div id="work" className="pt-7 md:pt-20">
         <Work />
       </div>
-      <div id="contact" className="pt-7">
-        <ContactUs />
+      <div id="contact" className="pt-7 md:pt-28">
+        <ContactMe />
       </div>
     </>
   );

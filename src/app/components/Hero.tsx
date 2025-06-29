@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className="text-3xl font-bold sm:text-3xl md:text-5xl text-white">
             Full-stack web developer
           </h1>
-          <p className="md:text-[17px] text-gray-200 leading-10">
+          <p className="text-xs md:text-[16px] leading-7 text-gray-200 ">
             Hello, My name is Kudae Sithu. I am passionate about building
             modern, & responsive web applications. I enjoy working with both
             front-end and back-end technologies, & I&apos;m always eager to
@@ -30,7 +30,7 @@ const Hero = () => {
             <a href="/Kudae-Sithu-Resume.pdf" download>
               <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs text-white backdrop-blur-3xl">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-white backdrop-blur-3xl">
                   Download Resume
                 </span>
               </button>
@@ -40,7 +40,7 @@ const Hero = () => {
               href="#work"
               className="flex justify-center items-center gap-2 cursor-pointer"
             >
-              <p className="text-xs">SEE MY WORKS</p>
+              <p className="text-xs md:text-[14px]">SEE MY WORKS</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
       {/* social */}
-      <div className="flex justify-between items-end mt-10 md:mt-0 px-7 md:pb-[130px] text-slate-300 text-sm">
+      <div className="flex justify-between items-end mt-10 md:mt-0 px-7 md:pb-[130px] text-slate-300 text-xs md:text-[14px]">
         <div className="flex items-center ">
           <Link
             className="hover:text-slate-50 duration-300"

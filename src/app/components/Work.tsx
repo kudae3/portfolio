@@ -71,7 +71,7 @@ const Work = () => (
       <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
         Work Experiences
       </h2>
-      <p className="text-gray-300 text-sm md:text-[16px] max-w-2xl mx-auto mb-6">
+      <p className="text-gray-300 text-xs md:text-[16px] max-w-2xl mx-auto mb-6">
         Explore my professional journey through various projects and experiences
         that showcase my skills and contributions in the tech industry.
       </p>
@@ -81,14 +81,14 @@ const Work = () => (
     <MyTimeline />
 
     <div className="mt-24">
-      <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-10">
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-7 md:mb-10">
         Things I&apos;ve Built
       </h3>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <article
             key={index}
-            className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25"
+            className="overflow-hidden mx-3 sm:m-0 rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25"
           >
             <Image
               alt=""

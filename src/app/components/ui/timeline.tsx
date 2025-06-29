@@ -33,10 +33,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="text-xl font-semibold mb-4 text-black dark:text-white max-w-4xl">
           Changelog from my journey
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 dark:text-neutral-300 text-xs md:text-[16px] max-w-sm">
           For the past six months, I&#39;ve been working as an Intern Web
           Developer at Creative Coder Myanmar. Here&#39;s a timeline
           highlighting key moments from my journey.

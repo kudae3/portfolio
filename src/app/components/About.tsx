@@ -9,7 +9,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             About Me
           </h2>
-          <p className="text-gray-300 text-sm md:text-[16px] max-w-2xl mx-auto mb-6">
+          <p className="text-gray-300 text-xs md:text-[16px] max-w-2xl mx-auto mb-6">
             Get to know more about my journey, skills, and passion for creating
             exceptional digital experiences.
           </p>
@@ -23,7 +23,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-white mb-4">
                 My Mission
               </h3>
-              <p className="text-gray-300 leading-7">
+              <p className="text-gray-300 text-xs leading-7 md:text-[16px]">
                 I believe in the power of technology to solve real-world
                 problems. My goal is to create clean, efficient, and scalable
                 applications that not only meet technical requirements but also
@@ -35,7 +35,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-white mb-4">
                 Beyond Code
               </h3>
-              <p className="text-gray-300 leading-7">
+              <p className="text-gray-300 text-xs md:text-[16px] leading-7">
                 When I&apos;m not coding, you&apos;ll find me exploring new
                 technologies, contributing to open-source projects, or sharing
                 knowledge with the developer community. I&apos;m always eager to
@@ -54,7 +54,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div>
-                    <div className="flex justify-between text-sm mb-1">
+                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
                       <span className="text-gray-300">React/Next.js</span>
                       <span className="text-gray-400">80%</span>
                     </div>
@@ -66,7 +66,7 @@ const About = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="flex justify-between text-sm mb-1">
+                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
                       <span className="text-gray-300">Vue</span>
                       <span className="text-gray-400">85%</span>
                     </div>
@@ -78,21 +78,21 @@ const About = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="flex justify-between text-sm mb-1">
+                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
                       <span className="text-gray-300">Node.js</span>
-                      <span className="text-gray-400">70%</span>
+                      <span className="text-gray-400">75%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div
                         className="bg-purple-500 h-2 rounded-full"
-                        style={{ width: "70%" }}
+                        style={{ width: "75%" }}
                       ></div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div>
-                    <div className="flex justify-between text-sm mb-1">
+                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
                       <span className="text-gray-300">Databases</span>
                       <span className="text-gray-400">75%</span>
                     </div>
@@ -104,7 +104,7 @@ const About = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="flex justify-between text-sm mb-1">
+                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
                       <span className="text-gray-300">Laravel</span>
                       <span className="text-gray-400">85%</span>
                     </div>
@@ -129,13 +129,15 @@ const About = () => {
                   <div className="text-2xl font-bold text-blue-400 mb-1">
                     2+
                   </div>
-                  <div className="text-sm text-gray-400">Years Experience</div>
+                  <div className="text-xs md:text-[14px] text-gray-400">
+                    Years Experience
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                   <div className="text-2xl font-bold text-green-400 mb-1">
                     7+
                   </div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-xs md:text-[14px] text-gray-400">
                     Projects Completed
                   </div>
                 </div>
@@ -143,13 +145,17 @@ const About = () => {
                   <div className="text-2xl font-bold text-purple-400 mb-1">
                     5+
                   </div>
-                  <div className="text-sm text-gray-400">Technologies</div>
+                  <div className="text-xs md:text-[14px] text-gray-400">
+                    Technologies
+                  </div>
                 </div>
                 <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                   <div className="text-2xl font-bold text-yellow-400 mb-1">
                     100%
                   </div>
-                  <div className="text-sm text-gray-400">Dedication</div>
+                  <div className="text-xs md:text-[14px] text-gray-400">
+                    Dedication
+                  </div>
                 </div>
               </div>
             </div>
