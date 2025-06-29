@@ -58,7 +58,7 @@ const ContactMe = () => {
                   className="w-full h-full object-cover"
                   width={56}
                   height={56}
-                  src="/socials/gmail.gif"
+                  src="/socials/Gmail.gif"
                   alt=""
                 />
               </div>
