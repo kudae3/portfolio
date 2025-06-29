@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import SplitText from "./ui/split-text";
 
 const Hero = () => {
   return (
@@ -17,10 +20,15 @@ const Hero = () => {
         </div>
 
         <div className="space-y-7 text-center md:text-left order-2 md:order-1">
-          <h1 className="text-3xl font-bold sm:text-3xl md:text-5xl text-white">
-            Full-stack web developer
-          </h1>
-          <p className="text-xs md:text-[16px] leading-7 text-gray-200 ">
+          <SplitText
+            text="Full-stack Web Developer"
+            className="text-xl sm:text-3xl font-bold md:text-4xl text-white"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+          />
+          <p className="text-xs md:text-[16px] leading-7 text-gray-200">
             Hello, My name is Kudae Sithu. I am passionate about building
             modern, & responsive web applications. I enjoy working with both
             front-end and back-end technologies, & I&apos;m always eager to
