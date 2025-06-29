@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import AnimatedContent from "./ui/animated-content";
+import CountUp from "./ui/count-up";
 
 const About = () => {
   return (
@@ -132,7 +133,15 @@ const About = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                     <div className="text-2xl font-bold text-blue-400 mb-1">
-                      2+
+                      <CountUp
+                        from={0}
+                        to={2}
+                        separator=","
+                        direction="up"
+                        duration={1}
+                        className="count-up-text"
+                      />
+                      +
                     </div>
                     <div className="text-xs md:text-[14px] text-gray-400">
                       Years Experience
@@ -140,7 +149,15 @@ const About = () => {
                   </div>
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                     <div className="text-2xl font-bold text-green-400 mb-1">
-                      7+
+                      <CountUp
+                        from={0}
+                        to={7}
+                        separator=","
+                        direction="up"
+                        duration={1}
+                        className="count-up-text"
+                      />
+                      +
                     </div>
                     <div className="text-xs md:text-[14px] text-gray-400">
                       Projects Completed
@@ -148,7 +165,15 @@ const About = () => {
                   </div>
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                     <div className="text-2xl font-bold text-purple-400 mb-1">
-                      5+
+                      <CountUp
+                        from={0}
+                        to={5}
+                        separator=","
+                        direction="up"
+                        duration={1}
+                        className="count-up-text"
+                      />
+                      +
                     </div>
                     <div className="text-xs md:text-[14px] text-gray-400">
                       Technologies
@@ -156,7 +181,15 @@ const About = () => {
                   </div>
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg">
                     <div className="text-2xl font-bold text-yellow-400 mb-1">
-                      100%
+                      <CountUp
+                        from={0}
+                        to={100}
+                        separator=","
+                        direction="up"
+                        duration={1}
+                        className="count-up-text"
+                      />
+                      %
                     </div>
                     <div className="text-xs md:text-[14px] text-gray-400">
                       Dedication
