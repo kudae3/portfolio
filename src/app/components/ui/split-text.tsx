@@ -24,7 +24,7 @@ const SplitText: React.FC<SplitTextProps> = ({
   text,
   className = "",
   delay = 100,
-  duration = 0.3,
+  duration = 0.2,
   ease = "power3.out",
   splitType = "words, chars",
   from = { opacity: 0, y: 40 },

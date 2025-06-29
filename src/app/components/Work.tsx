@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,6 +13,7 @@ import { SiShadcnui } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import MyTimeline from "./MyTimeline";
+import AnimatedContent from "./ui/animated-content";
 
 const projects = [
   {
@@ -78,67 +80,71 @@ const Work = () => (
     </div>
 
     {/* Timeline */}
-    <MyTimeline />
+    <AnimatedContent>
+      <MyTimeline />
+    </AnimatedContent>
 
     <div className="mt-24">
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-7 md:mb-10">
         Things I&apos;ve Built
       </h3>
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <article
-            key={index}
-            className="overflow-hidden mx-3 sm:m-0 rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25"
-          >
-            <Image
-              alt=""
-              width={300}
-              height={300}
-              src={project.image}
-              className="h-56 w-full object-cover"
-            />
+      <AnimatedContent>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <article
+              key={index}
+              className="overflow-hidden mx-3 sm:m-0 rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25"
+            >
+              <Image
+                alt=""
+                width={300}
+                height={300}
+                src={project.image}
+                className="h-56 w-full object-cover"
+              />
 
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-white">
-                  {project.title}
-                </h3>
-              </a>
+              <div className="p-4 sm:p-6">
+                <a href="#">
+                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+                    {project.title}
+                  </h3>
+                </a>
 
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
-                {project.description}
-              </p>
+                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
+                  {project.description}
+                </p>
 
-              {project.techStack && (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {project.techStack.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="inline-flex items-center rounded-full bg-gray-100 p-2 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              )}
+                {project.techStack && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {project.techStack.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="inline-flex items-center rounded-full bg-gray-100 p-2 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
-              <Link
-                href={project.link}
-                target="_blank"
-                className="group mt-5 inline-flex items-center gap-1 text-sm font-medium text-gray-400"
-              >
-                Explore
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  className="group mt-5 inline-flex items-center gap-1 text-sm font-medium text-gray-400"
                 >
-                  &rarr;
-                </span>
-              </Link>
-            </div>
-          </article>
-        ))}
-      </div>
+                  Explore
+                  <span
+                    aria-hidden="true"
+                    className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
+                  >
+                    &rarr;
+                  </span>
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </AnimatedContent>
     </div>
   </section>
 );

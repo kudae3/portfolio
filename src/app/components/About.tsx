@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import AnimatedContent from "./ui/animated-content";
 
 const About = () => {
   return (
@@ -18,148 +20,152 @@ const About = () => {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left Column - Personal Info */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-4">
-                My Mission
-              </h3>
-              <p className="text-gray-300 text-xs leading-7 md:text-[16px]">
-                I believe in the power of technology to solve real-world
-                problems. My goal is to create clean, efficient, and scalable
-                applications that not only meet technical requirements but also
-                provide exceptional user experiences.
-              </p>
-            </div>
+          <AnimatedContent direction="horizontal" reverse={true}>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  My Mission
+                </h3>
+                <p className="text-gray-300 text-xs leading-7 md:text-[16px]">
+                  I believe in the power of technology to solve real-world
+                  problems. My goal is to create clean, efficient, and scalable
+                  applications that not only meet technical requirements but
+                  also provide exceptional user experiences.
+                </p>
+              </div>
 
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-4">
-                Beyond Code
-              </h3>
-              <p className="text-gray-300 text-xs md:text-[16px] leading-7">
-                When I&apos;m not coding, you&apos;ll find me exploring new
-                technologies, contributing to open-source projects, or sharing
-                knowledge with the developer community. I&apos;m always eager to
-                learn and grow both professionally and personally.
-              </p>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Beyond Code
+                </h3>
+                <p className="text-gray-300 text-xs md:text-[16px] leading-7">
+                  When I&apos;m not coding, you&apos;ll find me exploring new
+                  technologies, contributing to open-source projects, or sharing
+                  knowledge with the developer community. I&apos;m always eager
+                  to learn and grow both professionally and personally.
+                </p>
+              </div>
             </div>
-          </div>
+          </AnimatedContent>
 
           {/* Right Column - Skills & Stats */}
-          <div className="space-y-8">
-            {/* Skills */}
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-6">
-                Technical Skills
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div>
-                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
-                      <span className="text-gray-300">React/Next.js</span>
-                      <span className="text-gray-400">80%</span>
+          <AnimatedContent direction="horizontal">
+            <div className="space-y-8">
+              {/* Skills */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-6">
+                  Technical Skills
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div>
+                      <div className="flex justify-between text-xs md:text-[14px] mb-1">
+                        <span className="text-gray-300">React/Next.js</span>
+                        <span className="text-gray-400">80%</span>
+                      </div>
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <div
+                          className="bg-blue-500 h-2 rounded-full"
+                          style={{ width: "80%" }}
+                        ></div>
+                      </div>
                     </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-blue-500 h-2 rounded-full"
-                        style={{ width: "80%" }}
-                      ></div>
+                    <div>
+                      <div className="flex justify-between text-xs md:text-[14px] mb-1">
+                        <span className="text-gray-300">Vue</span>
+                        <span className="text-gray-400">85%</span>
+                      </div>
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <div
+                          className="bg-green-500 h-2 rounded-full"
+                          style={{ width: "85%" }}
+                        ></div>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
-                      <span className="text-gray-300">Vue</span>
-                      <span className="text-gray-400">85%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-green-500 h-2 rounded-full"
-                        style={{ width: "85%" }}
-                      ></div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
-                      <span className="text-gray-300">Node.js</span>
-                      <span className="text-gray-400">75%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-purple-500 h-2 rounded-full"
-                        style={{ width: "75%" }}
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div>
-                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
-                      <span className="text-gray-300">Databases</span>
-                      <span className="text-gray-400">75%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-yellow-500 h-2 rounded-full"
-                        style={{ width: "75%" }}
-                      ></div>
+                    <div>
+                      <div className="flex justify-between text-xs md:text-[14px] mb-1">
+                        <span className="text-gray-300">Node.js</span>
+                        <span className="text-gray-400">75%</span>
+                      </div>
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <div
+                          className="bg-purple-500 h-2 rounded-full"
+                          style={{ width: "75%" }}
+                        ></div>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="flex justify-between text-xs md:text-[14px] mb-1">
-                      <span className="text-gray-300">Laravel</span>
-                      <span className="text-gray-400">85%</span>
+                  <div className="space-y-3">
+                    <div>
+                      <div className="flex justify-between text-xs md:text-[14px] mb-1">
+                        <span className="text-gray-300">Databases</span>
+                        <span className="text-gray-400">75%</span>
+                      </div>
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <div
+                          className="bg-yellow-500 h-2 rounded-full"
+                          style={{ width: "75%" }}
+                        ></div>
+                      </div>
                     </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className="bg-pink-500 h-2 rounded-full"
-                        style={{ width: "85%" }}
-                      ></div>
+                    <div>
+                      <div className="flex justify-between text-xs md:text-[14px] mb-1">
+                        <span className="text-gray-300">Laravel</span>
+                        <span className="text-gray-400">85%</span>
+                      </div>
+                      <div className="w-full bg-gray-700 rounded-full h-2">
+                        <div
+                          className="bg-pink-500 h-2 rounded-full"
+                          style={{ width: "85%" }}
+                        ></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Quick Stats */}
-            <div>
-              <h3 className="text-xl font-semibold text-white mb-6">
-                Quick Stats
-              </h3>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">
-                    2+
+              {/* Quick Stats */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-6">
+                  Quick Stats
+                </h3>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center p-4 bg-gray-800/50 rounded-lg">
+                    <div className="text-2xl font-bold text-blue-400 mb-1">
+                      2+
+                    </div>
+                    <div className="text-xs md:text-[14px] text-gray-400">
+                      Years Experience
+                    </div>
                   </div>
-                  <div className="text-xs md:text-[14px] text-gray-400">
-                    Years Experience
+                  <div className="text-center p-4 bg-gray-800/50 rounded-lg">
+                    <div className="text-2xl font-bold text-green-400 mb-1">
+                      7+
+                    </div>
+                    <div className="text-xs md:text-[14px] text-gray-400">
+                      Projects Completed
+                    </div>
                   </div>
-                </div>
-                <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                  <div className="text-2xl font-bold text-green-400 mb-1">
-                    7+
+                  <div className="text-center p-4 bg-gray-800/50 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-400 mb-1">
+                      5+
+                    </div>
+                    <div className="text-xs md:text-[14px] text-gray-400">
+                      Technologies
+                    </div>
                   </div>
-                  <div className="text-xs md:text-[14px] text-gray-400">
-                    Projects Completed
-                  </div>
-                </div>
-                <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                  <div className="text-2xl font-bold text-purple-400 mb-1">
-                    5+
-                  </div>
-                  <div className="text-xs md:text-[14px] text-gray-400">
-                    Technologies
-                  </div>
-                </div>
-                <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                  <div className="text-2xl font-bold text-yellow-400 mb-1">
-                    100%
-                  </div>
-                  <div className="text-xs md:text-[14px] text-gray-400">
-                    Dedication
+                  <div className="text-center p-4 bg-gray-800/50 rounded-lg">
+                    <div className="text-2xl font-bold text-yellow-400 mb-1">
+                      100%
+                    </div>
+                    <div className="text-xs md:text-[14px] text-gray-400">
+                      Dedication
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </AnimatedContent>
         </div>
       </div>
     </section>
