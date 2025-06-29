@@ -9,7 +9,7 @@ function MyTimeline() {
       content: (
         <div>
           <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-800 dark:text-neutral-200">
-            Joined <strong>Creative Coder Myanmar</strong> as a Intern Web
+            Joined <strong>Creative Coder Myanmar</strong> as an Intern Web
             Developer.
           </p>
           <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside text-neutral-700 dark:text-neutral-300">
