@@ -21,7 +21,7 @@ const ContactMe = () => {
     };
 
     await axios
-      .post("http://localhost:3000/api/contact", {
+      .post("https://portfolio-gamma-neon-73.vercel.app/api/contact", {
         ...formData,
       })
       .then(() => {
