@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kudae Sithu | Portfolio
+
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS. This project showcases my journey, skills, and projects as a software developer.
+
+## Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Showcase](#showcase)
+- [Contact](#contact)
+- [Contributing](#contributing)
+
+---
+
+## Features
+
+- Personal introduction and mission statement
+- Timeline of professional experience
+- Project showcase with tech stack and links
+- Contact form with email integration
+- Responsive and modern UI with animated effects
+- Downloadable resume
+
+## Demo
+
+Visit the live site: [Your Portfolio Link Here]
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+.
+├── public/                # Static assets (images, resume, etc.)
+├── src/
+│   └── app/
+│       ├── components/    # React components (About, Work, Contact, etc.)
+│       ├── globals.css    # Global styles
+│       ├── layout.tsx     # App layout
+│       └── page.tsx       # Main page
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+├── package.json           # Project metadata and scripts
+├── tsconfig.json          # TypeScript configuration
+└── README.md
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://axios-http.com/)
+- [react-hot-toast](https://react-hot-toast.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Showcase
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Projects
 
-## Deploy on Vercel
+- **Subscription Management System**  
+  Node.js backend for managing subscriptions, payments, and user accounts.  
+  [GitHub](https://github.com/kudae3/Subscription-tracker)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Corporate Web Application**  
+  Full-stack Next.js job board app with admin job management and Clerk authentication.  
+  [Demo](https://youtu.be/7fTBW_BLmHM?si=qBGzzJhFgb57-mnw)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Hyper UI**  
+  Contributed modal components with advanced input fields to Hyper UI.  
+  [Demo](https://www.hyperui.dev/components/application/modals)
+
+## Contact
+
+Feel free to reach out!
+
+- **Email:** [kudaesithu@gmail.com](mailto:kudaesithu@gmail.com)
+- **Phone:** +(959)751025121
+- **Messenger:** Joey Rhys
