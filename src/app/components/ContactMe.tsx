@@ -163,7 +163,7 @@ const ContactMe = () => {
                 type="text"
                 required
                 className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
-                placeholder="Subject"
+                placeholder="Title"
               />
             </div>
             <div>
@@ -179,7 +179,7 @@ const ContactMe = () => {
                 type="text"
                 required
                 className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
-                placeholder="Subject"
+                placeholder="Message"
               />
             </div>
             <button className="px-4 py-3 cursor-pointer rounded-xl bg-gray-800 text-white text-xs md:text-[14px] hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
