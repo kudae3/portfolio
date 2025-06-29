@@ -4,19 +4,23 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SplitText from "./ui/split-text";
+import ShinyText from "./ui/shiny-text";
+import AnimatedContent from "./ui/animated-content";
 
 const Hero = () => {
   return (
     <section className="container flex flex-col space-y-5">
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
         <div className="order-1 md:order-2 mt-5 md:mt-0">
-          <Image
-            src="/test.jpg"
-            alt="my profile"
-            width={300}
-            height={300}
-            className="object-cover mx-auto rounded-xl"
-          />
+          <AnimatedContent direction="horizontal">
+            <Image
+              src="/test.jpg"
+              alt="my profile"
+              width={300}
+              height={300}
+              className="object-cover mx-auto rounded-xl"
+            />
+          </AnimatedContent>
         </div>
 
         <div className="space-y-7 text-center md:text-left order-2 md:order-1">
@@ -28,17 +32,21 @@ const Hero = () => {
             threshold={0.1}
             rootMargin="-100px"
           />
-          <p className="text-xs md:text-[16px] leading-7 text-gray-200">
-            Hello, My name is Kudae Sithu. I am passionate about building
+
+          <ShinyText
+            text="Hello, My name is Kudae Sithu. I am passionate about building
             modern, & responsive web applications. I enjoy working with both
-            front-end and back-end technologies, & I&apos;m always eager to
-            learn new tools and frameworks to improve my skills.
-          </p>
+            front-end and back-end technologies, & I'm always eager to
+            learn new tools and frameworks to improve my skills."
+            disabled={false}
+            speed={4}
+            className="text-xs md:text-[16px] leading-7"
+          />
           <div className="flex items-center justify-center md:justify-start space-x-4 font-medium">
             <a href="/Kudae-Sithu-Resume.pdf" download>
               <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-white backdrop-blur-3xl">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-gray-300 backdrop-blur-3xl">
                   Download Resume
                 </span>
               </button>
@@ -48,7 +56,9 @@ const Hero = () => {
               href="#work"
               className="flex justify-center items-center gap-2 cursor-pointer"
             >
-              <p className="text-xs md:text-[14px]">SEE MY WORKS</p>
+              <p className="text-xs md:text-[14px] text-gray-300">
+                SEE MY WORKS
+              </p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
