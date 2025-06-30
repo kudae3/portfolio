@@ -11,7 +11,6 @@ A modern, responsive portfolio website built with Next.js, React, and Tailwind C
 - [Tech Stack](#tech-stack)
 - [Showcase](#showcase)
 - [Contact](#contact)
-- [Contributing](#contributing)
 
 ---
 
@@ -26,7 +25,7 @@ A modern, responsive portfolio website built with Next.js, React, and Tailwind C
 
 ## Demo
 
-Visit the live site: https://portfolio-qj58qepz2-kudae-sithus-projects.vercel.app/
+Visit the live site: https://portfolio-gamma-neon-73.vercel.app/
 
 ## Getting Started
 
