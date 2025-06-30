@@ -66,7 +66,7 @@ const ContactMe = () => {
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Email Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-primary-100">
+                <p className="text-xs md:text-[14px] text-white">
                   kudaesithu2@gmail.com
                 </p>
               </div>
@@ -86,7 +86,7 @@ const ContactMe = () => {
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Call Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-primary-100">
+                <p className="text-xs md:text-[14px] text-white">
                   +(959)751025121
                 </p>
               </div>
@@ -106,9 +106,7 @@ const ContactMe = () => {
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Message Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-primary-100">
-                  Joey Rhys
-                </p>
+                <p className="text-xs md:text-[14px] text-white">Joey Rhys</p>
               </div>
             </div>
           </div>
