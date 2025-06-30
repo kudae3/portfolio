@@ -49,7 +49,7 @@ const ContactMe = () => {
       </div>
 
       <AnimatedContent>
-        <div className="md:flex max-w-6xl gap-10 mx-auto mb-24">
+        <div className="md:flex max-w-6xl gap-10 mx-auto">
           {/* CTA */}
           <div className="md:w-1/2 space-y-10 mb-10 md:mb-0 p-0 md:p-10">
             <div className="grid grid-cols-2">
