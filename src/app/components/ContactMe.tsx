@@ -80,7 +80,7 @@ const ContactMe = () => {
                   alt=""
                 />
               </div>
-              <div className="text-whitet">
+              <div className="text-white">
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Call Me
                 </h3>
