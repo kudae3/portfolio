@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body>
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-black">
           {children}
           <ShootingStars />
           <StarsBackground />
