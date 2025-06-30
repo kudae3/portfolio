@@ -66,13 +66,15 @@ const Navbar = () => {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="text-xs md:text-[14px]">Kudae&#39;s Portfolio</div>
+      <div className="text-xs text-white md:text-[14px]">
+        Kudae&#39;s Portfolio
+      </div>
       <ul className="hidden md:flex space-x-7 text-[15px]">
         {NAV_ITEMS.map((item) => (
           <li key={item.id} className="flex flex-col items-center">
             <a
               href={`#${item.id}`}
-              className="hover:text-slate-300 duration-300 text-xs md:text-[14px]"
+              className="hover:text-slate-300 text-white duration-300 text-xs md:text-[14px]"
             >
               {item.label}
             </a>
@@ -120,7 +122,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="px-4 py-2 text-sm hover:bg-gray-800 hover:text-slate-300 duration-300 flex items-center justify-between"
+                    className="px-4 py-2 text-sm hover:bg-gray-800 hover:text-slate-300 text-white duration-300 flex items-center justify-between"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
