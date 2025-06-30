@@ -23,7 +23,15 @@ export default function RootLayout({
           <ShootingStars />
           <StarsBackground />
         </div>
-        <Toaster position="top-right" />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              background: "#333",
+              color: "#fff",
+            },
+          }}
+        />
       </body>
     </html>
   );
