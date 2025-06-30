@@ -55,7 +55,7 @@ const Hero = () => {
 
             <a
               href="#work"
-              className="flex justify-center items-center gap-2 cursor-pointer"
+              className="flex justify-center items-center gap-1 cursor-pointer"
             >
               <p className="text-xs md:text-[14px] text-gray-300">
                 SEE MY WORKS
@@ -66,7 +66,7 @@ const Hero = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="size-6"
+                className="size-6 text-gray-300"
               >
                 <path
                   strokeLinecap="round"
