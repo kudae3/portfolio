@@ -62,13 +62,11 @@ const ContactMe = () => {
                   alt=""
                 />
               </div>
-              <div>
+              <div className="text-white">
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Email Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-white">
-                  kudaesithu2@gmail.com
-                </p>
+                <p className="text-xs md:text-[14px] ">kudaesithu2@gmail.com</p>
               </div>
             </div>
 
@@ -82,13 +80,11 @@ const ContactMe = () => {
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className="text-whitet">
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Call Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-white">
-                  +(959)751025121
-                </p>
+                <p className="text-xs md:text-[14px] ">+(959)751025121</p>
               </div>
             </div>
 
@@ -102,11 +98,11 @@ const ContactMe = () => {
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className="text-white">
                 <h3 className="text-[14px] md:text-lg font-semibold mb-2">
                   Message Me
                 </h3>
-                <p className="text-xs md:text-[14px] text-white">Joey Rhys</p>
+                <p className="text-xs md:text-[14px] ">Joey Rhys</p>
               </div>
             </div>
           </div>
