@@ -34,10 +34,7 @@ const projects = [
     description:
       "A full-stack Next.js job board app featuring job management by admin, and secure user authentication with Clerk.",
     techStack: [
-      <RiNextjsFill
-        key="nextjs"
-        className="text-black dark:text-white text-xl"
-      />,
+      <RiNextjsFill key="nextjs" className="text-white text-xl" />,
       <RiTailwindCssFill key="tailwind" className="text-cyan-500 text-xl" />,
       <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
       <SiTypescript key="typescript" className="text-blue-500 text-xl" />,
@@ -52,10 +49,7 @@ const projects = [
     description:
       "Contributed to Hyper UI by developing modal components with advanced input fields, improving usability and accessibility.",
     techStack: [
-      <RiNextjsFill
-        key="nextjs"
-        className="text-black dark:text-white text-xl"
-      />,
+      <RiNextjsFill key="nextjs" className="text-white text-xl" />,
       <RiTailwindCssFill key="tailwind" className="text-cyan-500 text-xl" />,
       <FaReact key="react" className="text-sky-500 text-xl" />,
       <IoLogoJavascript key="javascript" className="text-yellow-300 text-xl" />,
@@ -85,7 +79,7 @@ const Work = () => (
     </AnimatedContent>
 
     <div className="mt-24">
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-7 md:mb-10">
+      <h3 className="text-xl font-semibold text-white mb-7 md:mb-10">
         Things I&apos;ve Built
       </h3>
       <AnimatedContent>
@@ -93,7 +87,7 @@ const Work = () => (
           {projects.map((project, index) => (
             <article
               key={index}
-              className="overflow-hidden mx-3 sm:m-0 rounded-lg border border-gray-100 bg-white shadow-xs dark:border-gray-800 dark:bg-gray-900 dark:shadow-gray-700/25"
+              className="overflow-hidden mx-3 sm:m-0 rounded-lg border  shadow-xs border-gray-800 bg-gray-900 shadow-gray-700/25"
             >
               <Image
                 alt=""
@@ -105,12 +99,12 @@ const Work = () => (
 
               <div className="p-4 sm:p-6">
                 <a href="#">
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+                  <h3 className="text-lg font-medium text-white">
                     {project.title}
                   </h3>
                 </a>
 
-                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
+                <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-400">
                   {project.description}
                 </p>
 
@@ -119,7 +113,7 @@ const Work = () => (
                     {project.techStack.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="inline-flex items-center rounded-full bg-gray-100 p-2 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                        className="inline-flex items-center rounded-full  p-2 text-xs font-medium  bg-gray-800 text-gray-300"
                       >
                         {tech}
                       </span>

@@ -36,7 +36,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-0 px-5 mb-10">
+    <section className="max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-0 px-5 pb-10">
       {/* Section Header */}
       <div className="text-center mb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -119,7 +119,7 @@ const ContactMe = () => {
           >
             <div>
               <label
-                className="block text-gray-700 dark:text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
+                className="block text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
                 htmlFor="name"
               >
                 Name
@@ -129,13 +129,13 @@ const ContactMe = () => {
                 name="name"
                 type="text"
                 required
-                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Your Name"
               />
             </div>
             <div>
               <label
-                className="block text-gray-700 dark:text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
+                className="block text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
                 htmlFor="email"
               >
                 Email
@@ -145,14 +145,14 @@ const ContactMe = () => {
                 name="email"
                 type="email"
                 required
-                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="you@email.com"
               />
             </div>
 
             <div>
               <label
-                className="block text-gray-700 dark:text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
+                className="block text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
                 htmlFor="title"
               >
                 Title
@@ -162,13 +162,13 @@ const ContactMe = () => {
                 name="title"
                 type="text"
                 required
-                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Title"
               />
             </div>
             <div>
               <label
-                className="block text-gray-700 dark:text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
+                className="block text-gray-200 text-xs md:text-[14px] font-semibold mb-2"
                 htmlFor="description"
               >
                 Message
@@ -178,7 +178,7 @@ const ContactMe = () => {
                 name="message"
                 type="text"
                 required
-                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-0"
+                className="w-full px-4 py-3 text-xs md:text-[14px] border-b border-gray-400 hover:border-gray-400 focus:border-gray-600 text-gray-100 focus:outline-none focus:ring-0"
                 placeholder="Message"
               />
             </div>

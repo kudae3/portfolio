@@ -8,11 +8,11 @@ function MyTimeline() {
       title: "2025 Jan - Present",
       content: (
         <div>
-          <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-800 dark:text-neutral-200">
+          <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-200">
             Joined <strong>Creative Coder Myanmar</strong> as an Intern Web
             Developer.
           </p>
-          <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside text-neutral-700 dark:text-neutral-300">
+          <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside text-neutral-300">
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
               Developed and maintained web applications using{" "}
@@ -42,10 +42,10 @@ function MyTimeline() {
       title: "Upcoming Goals",
       content: (
         <div>
-          <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-4 text-xs md:text-[16px] font-normal md:text-sm text-neutral-200">
             Continue to grow as a full-stack developer.
           </p>
-          <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside  md:text-sm text-neutral-300">
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
               Master Next.js and React for frontend innovation
