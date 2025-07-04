@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="order-1 md:order-2 mt-5 md:mt-0">
           <AnimatedContent direction="horizontal">
             <Image
-              src="/profile.png"
+              src="/profile.jpg"
               alt="my profile"
               width={250}
               height={250}

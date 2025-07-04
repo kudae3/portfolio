@@ -36,7 +36,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="max-w-7xl min-h-screen mt-6 mx-auto py-10 md:py-0 px-5 pb-10">
+    <section className="max-w-7xl min-h-screen mt-6 mx-auto py-10 px-5">
       {/* Section Header */}
       <div className="text-center mb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -176,8 +176,25 @@ const ContactMe = () => {
                 placeholder="Message"
               />
             </div>
-            <button className="px-4 py-3 cursor-pointer rounded-xl bg-gray-800 text-white text-xs md:text-[14px] hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
-              {isSending ? "Sending..." : "Send Message"}
+            <button className="px-4 h-[50px] cursor-pointer rounded-xl bg-gray-800 text-white text-xs md:text-[14px] hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+              {isSending ? (
+                <div className="flex items-center justify-center">
+                  <Image
+                    src="/Sending.gif"
+                    width={30}
+                    height={30}
+                    alt="send icon"
+                    className="inline-block mr-2"
+                  />
+                  <p className="font-semibold text-gray-200 text-xs md:text-[14px]">
+                    Sending...
+                  </p>
+                </div>
+              ) : (
+                <p className="font-semibold text-gray-200 text-xs md:text-[14px]">
+                  Send Message
+                </p>
+              )}
             </button>
           </form>
         </div>
