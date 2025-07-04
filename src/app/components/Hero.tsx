@@ -16,8 +16,8 @@ const Hero = () => {
             <Image
               src="/profile.jpg"
               alt="my profile"
-              width={250}
-              height={250}
+              width={230}
+              height={230}
               className="object-cover mx-auto rounded-2xl"
             />
           </AnimatedContent>
