@@ -6,7 +6,7 @@ import CountUp from "./ui/count-up";
 const About = () => {
   return (
     <section className="container">
-      <div className="px-7">
+      <div className="px-7 mb-10 md:mb-20">
         {/* Section Header */}
         <div className="text-center mb-24">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-24">
           {/* Left Column - Personal Info */}
           <AnimatedContent direction="horizontal" reverse={true}>
             <div className="space-y-6">
@@ -199,6 +199,31 @@ const About = () => {
               </div>
             </div>
           </AnimatedContent>
+        </div>
+
+        {/* Certificates */}
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-6">
+            Professional Certificates
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="bg-gray-800/50 p-4 rounded-lg">
+              <h4 className="text-lg font-semibold text-blue-400 mb-2">
+                Full Stack Development
+              </h4>
+              <p className="text-gray-300 text-xs md:text-[14px]">
+                Certified by XYZ Institute
+              </p>
+            </div>
+            <div className="bg-gray-800/50 p-4 rounded-lg">
+              <h4 className="text-lg font-semibold text-green-400 mb-2">
+                React.js Mastery
+              </h4>
+              <p className="text-gray-300 text-xs md:text-[14px]">
+                Certified by ABC Academy
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
