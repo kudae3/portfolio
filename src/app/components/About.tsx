@@ -2,6 +2,7 @@
 import React from "react";
 import AnimatedContent from "./ui/animated-content";
 import CountUp from "./ui/count-up";
+import Certificates from "./Certificates";
 
 const About = () => {
   return (
@@ -202,29 +203,7 @@ const About = () => {
         </div>
 
         {/* Certificates */}
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-6">
-            Professional Certificates
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h4 className="text-lg font-semibold text-blue-400 mb-2">
-                Full Stack Development
-              </h4>
-              <p className="text-gray-300 text-xs md:text-[14px]">
-                Certified by XYZ Institute
-              </p>
-            </div>
-            <div className="bg-gray-800/50 p-4 rounded-lg">
-              <h4 className="text-lg font-semibold text-green-400 mb-2">
-                React.js Mastery
-              </h4>
-              <p className="text-gray-300 text-xs md:text-[14px]">
-                Certified by ABC Academy
-              </p>
-            </div>
-          </div>
-        </div>
+        <Certificates />
       </div>
     </section>
   );
