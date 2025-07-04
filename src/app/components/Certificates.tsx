@@ -1,6 +1,7 @@
 import React from "react";
 import { FaMeta } from "react-icons/fa6";
 import { FaUniversity } from "react-icons/fa";
+import StarBorder from "./ui/star-border";
 
 const Certificates = () => {
   return (
@@ -9,7 +10,7 @@ const Certificates = () => {
         Professional Certificates
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div className="bg-gray-800/50 p-4 rounded-lg">
+        <StarBorder>
           <h4 className="text-lg font-semibold mb-2">
             Introcution to Front-end Development
           </h4>
@@ -19,8 +20,9 @@ const Certificates = () => {
               <p>Meta</p>
             </div>
           </p>
-        </div>
-        <div className="bg-gray-800/50 p-4 rounded-lg">
+        </StarBorder>
+
+        <StarBorder>
           <h4 className="text-lg font-semibold mb-2">Data Structures</h4>
           <p className="text-xs md:text-[14px]">
             <div className="flex justify-start items-center gap-1 text-yellow-600 font-extrabold">
@@ -28,8 +30,9 @@ const Certificates = () => {
               <p>University of Michigan</p>
             </div>
           </p>
-        </div>
-        <div className="bg-gray-800/50 p-4 rounded-lg">
+        </StarBorder>
+
+        <StarBorder>
           <h4 className="text-lg font-semibold mb-2">
             Diploma In Software Engineering
           </h4>
@@ -39,7 +42,7 @@ const Certificates = () => {
               <p>European Open University</p>
             </div>
           </p>
-        </div>
+        </StarBorder>
       </div>
     </div>
   );
