@@ -3,6 +3,8 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { StarsBackground } from "./components/ui/stars-background";
 import { ShootingStars } from "./components/ui/shooting-stars";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "Kudae Sithu | Portfolio",
@@ -19,7 +21,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body>
         <div className="min-h-screen bg-black">
-          {children}
+          <Suspense fallback={<Loading />}>{children}</Suspense>
           <ShootingStars />
           <StarsBackground />
         </div>
