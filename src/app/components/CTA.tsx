@@ -34,7 +34,7 @@ const CTA = () => {
         </div>
         <div className="text-white">
           <h3 className="text-[14px] md:text-lg font-semibold mb-2">Call Me</h3>
-          <p className="text-xs md:text-[14px] ">(+95)9751025121</p>
+          <p className="text-xs md:text-[14px] ">(+959) 751025121</p>
         </div>
       </div>
 
