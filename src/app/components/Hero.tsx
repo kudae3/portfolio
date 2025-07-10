@@ -2,40 +2,62 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import SplitText from "./ui/split-text";
 import ShinyText from "./ui/shiny-text";
 import AnimatedContent from "./ui/animated-content";
+import Socials from "./Socials";
+import { FaReact } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { GrMysql } from "react-icons/gr";
+import { IoLogoNodejs } from "react-icons/io";
+import { FaLaravel } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <section className="container flex flex-col space-y-5">
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
         <div className="order-1 md:order-2 mt-5 md:mt-0 relative">
-          <div className="bg-green-400 text-white p-2 w-fit rounded-3xl absolute -top-15 left-1/5 -translate-x-1/2 text-xs md:text-sm font-semibold">
-            React
+          {/* React */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-15 left-1/5 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <FaReact className="size-6 text-blue-400" />
           </div>
-          <div className="bg-purple-400 text-white p-2 w-fit rounded-3xl absolute top-10 left-1/7 -translate-x-1/2 text-xs md:text-sm font-semibold">
-            Next.js
+
+          {/* Next.js */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 top-10 left-1/7 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <RiNextjsFill className="size-6 text-white" />
           </div>
-          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -top-25 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Tailwind CSS
+
+          {/* Tailwind CSS  */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-25 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <SiTailwindcss className="size-6 text-cyan-300" />
           </div>
-          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Vue.js
+
+          {/* TypeScript */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-20 right-1/2 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <SiTypescript className="size-6 text-blue-500" />
           </div>
-          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-30 right-2/3 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Vue.js
+
+          {/* Node.js */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-30 right-2/3 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <IoLogoNodejs className="size-6 text-green-300" />
           </div>
-          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Vue.js
+
+          {/* MySQL */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-30 top-30 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <GrMysql className="size-6 text-[#00758F]" />
           </div>
-          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Vue.js
+
+          {/* MongoDB */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 -bottom-30 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <SiMongodb className="size-6 text-green-500" />
           </div>
-          <div className="bg-orange-400 text-white p-2 w-fit rounded-3xl absolute right-30 top-30 translate-x-1/2 text-xs md:text-sm font-semibold">
-            Vue.js
+
+          {/* Laravel */}
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 top-5 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
+            <FaLaravel className="size-6 text-green-500" />
           </div>
+
           <AnimatedContent direction="horizontal">
             <Image
               src="/test.jpg"
@@ -102,51 +124,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* social */}
-      <div className="flex justify-between items-end mt-10 md:mt-0 px-7 md:pb-[130px] text-slate-300 text-xs md:text-[14px]">
-        <div className="flex items-center ">
-          <Link
-            className="hover:text-slate-50 duration-300"
-            target="_blank"
-            href={"https://www.linkedin.com/in/kudae-sithu-20b659248/"}
-          >
-            LinkedIn
-          </Link>
-          <span className="mx-2">/</span>
-          <Link
-            className="hover:text-slate-50 duration-300"
-            target="_blank"
-            href={"https://github.com/kudae3"}
-          >
-            Github
-          </Link>
-          <span className="mx-2">/</span>
-          <Link
-            className="hover:text-slate-50 duration-300"
-            target="_blank"
-            href={"https://wa.me/959751025121"}
-          >
-            WhatsApp
-          </Link>
-        </div>
-        {/* Scroll Down */}
-        {/* <div className="hover:text-slate-50 duration-300 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.1"
-            stroke="currentColor"
-            className="size-8"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            />
-          </svg>
-        </div> */}
-      </div>
+      <Socials />
     </section>
   );
 };
