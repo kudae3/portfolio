@@ -168,7 +168,7 @@ const About = () => {
                     <div className="text-2xl font-bold text-purple-400 mb-1">
                       <CountUp
                         from={0}
-                        to={5}
+                        to={8}
                         separator=","
                         direction="up"
                         duration={1}

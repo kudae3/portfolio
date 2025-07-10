@@ -19,43 +19,44 @@ const Hero = () => {
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
         <div className="order-1 md:order-2 mt-5 md:mt-0 relative">
           {/* React */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-15 left-1/5 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <FaReact className="size-6 text-blue-400" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-15 left-1/5 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
+            <FaReact className="size-5 text-[#61DBFB]" />
           </div>
 
           {/* Next.js */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 top-10 left-1/7 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <RiNextjsFill className="size-6 text-white" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 top-10 left-1/7 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
+            <RiNextjsFill className="size-5 text-[#ffffff]" />
           </div>
 
           {/* Tailwind CSS  */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-25 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <SiTailwindcss className="size-6 text-cyan-300" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-25 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed-2">
+            <SiTailwindcss className="size-5 text-[#38BDF8]" />
+            {/* Tailwind official cyan */}
           </div>
 
           {/* TypeScript */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-20 right-1/2 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <SiTypescript className="size-6 text-blue-500" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-20 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
+            <SiTypescript className="size-5 text-[#3178C6]" />
           </div>
 
           {/* Node.js */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-30 right-2/3 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <IoLogoNodejs className="size-6 text-green-300" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-30 right-2/3 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <IoLogoNodejs className="size-5 text-[#68A063]" />
           </div>
 
           {/* MySQL */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-30 top-30 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <GrMysql className="size-6 text-[#00758F]" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-30 top-30 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <GrMysql className="size-5 text-[#00758F]" />
           </div>
 
           {/* MongoDB */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 -bottom-30 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <SiMongodb className="size-6 text-green-500" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 -bottom-30 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <SiMongodb className="size-5 text-[#47A248]" />
           </div>
 
           {/* Laravel */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 top-5 translate-x-1/2  w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center">
-            <FaLaravel className="size-6 text-green-500" />
+          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 top-5 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <FaLaravel className="size-5 text-[#FF2D20]" />
           </div>
 
           <AnimatedContent direction="horizontal">
