@@ -11,13 +11,37 @@ const Hero = () => {
   return (
     <section className="container flex flex-col space-y-5">
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
-        <div className="order-1 md:order-2 mt-5 md:mt-0">
+        <div className="order-1 md:order-2 mt-5 md:mt-0 relative">
+          <div className="bg-green-400 text-white p-2 w-fit rounded-3xl absolute -top-15 left-1/5 -translate-x-1/2 text-xs md:text-sm font-semibold">
+            React
+          </div>
+          <div className="bg-purple-400 text-white p-2 w-fit rounded-3xl absolute top-10 left-1/7 -translate-x-1/2 text-xs md:text-sm font-semibold">
+            Next.js
+          </div>
+          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -top-25 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Tailwind CSS
+          </div>
+          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Vue.js
+          </div>
+          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-30 right-2/3 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Vue.js
+          </div>
+          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Vue.js
+          </div>
+          <div className="bg-blue-400 text-white p-2 w-fit rounded-3xl absolute -bottom-20 right-1/2 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Vue.js
+          </div>
+          <div className="bg-orange-400 text-white p-2 w-fit rounded-3xl absolute right-30 top-30 translate-x-1/2 text-xs md:text-sm font-semibold">
+            Vue.js
+          </div>
           <AnimatedContent direction="horizontal">
             <Image
-              src="/profile.jpg"
+              src="/test.jpg"
               alt="my profile"
-              width={230}
-              height={230}
+              width={200}
+              height={200}
               className="object-cover mx-auto rounded-2xl"
             />
           </AnimatedContent>
