@@ -12,6 +12,7 @@ import { GrMysql } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
 import { FaLaravel } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import AnimatedContent from "./ui/animated-content";
 
 const Hero = () => {
   return (
@@ -63,7 +64,7 @@ const Hero = () => {
             <IoLogoGithub className="size-3 lg:size-5 text-white" />
           </div>
 
-          <>
+          <AnimatedContent direction="horizontal" reverse={true}>
             <Image
               src="/profile.jpg"
               alt="my profile"
@@ -71,7 +72,7 @@ const Hero = () => {
               height={160}
               className="object-cover mx-auto rounded-2xl"
             />
-          </>
+          </AnimatedContent>
         </div>
 
         <div className="space-y-7 text-center md:text-left order-2 md:order-1">
