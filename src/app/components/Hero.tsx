@@ -12,6 +12,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
 import { FaLaravel } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -19,44 +20,48 @@ const Hero = () => {
       <div className="px-7 grid md:grid-cols-2 md:items-center gap-12 flex-1">
         <div className="order-1 md:order-2 mt-5 md:mt-0 relative">
           {/* React */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-15 left-1/5 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
-            <FaReact className="size-5 text-[#61DBFB]" />
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 -top-0 lg:-top-15 left-10 -translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <FaReact className="size-3 lg:size-5 text-[#61DBFB]" />
           </div>
 
           {/* Next.js */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 top-10 left-1/7 -translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
-            <RiNextjsFill className="size-5 text-[#ffffff]" />
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 top-15 lg:top-1/10 lg:left-1/7 -translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
+            <RiNextjsFill className="size-3 lg:size-5 text-[#ffffff]" />
           </div>
 
           {/* Tailwind CSS  */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -top-25 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed-2">
-            <SiTailwindcss className="size-5 text-[#38BDF8]" />
-            {/* Tailwind official cyan */}
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 top-7 right-0 md:-right-1 lg:top-40 lg:left-25 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed-2">
+            <SiTailwindcss className="size-3 lg:size-5 text-[#38BDF8]" />
           </div>
 
           {/* TypeScript */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-20 right-1/2 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
-            <SiTypescript className="size-5 text-[#3178C6]" />
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 -bottom-10 md:-bottom-15 lg:-bottom-20 right-1/3 lg:right-1/2 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float">
+            <SiTypescript className="size-3 lg:size-5 text-[#3178C6]" />
           </div>
 
           {/* Node.js */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 -bottom-30 right-2/3 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
-            <IoLogoNodejs className="size-5 text-[#68A063]" />
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 bottom-10 lg:-bottom-20 -left-10 lg:-left-0 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <IoLogoNodejs className="size-3 lg:size-5 text-[#68A063]" />
           </div>
 
           {/* MySQL */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-30 top-30 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
-            <GrMysql className="size-5 text-[#00758F]" />
+          <div className="absolute z-10 bg-gradient-to-b from-black to-gray-900 right-7 lg:right-30 top-30 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
+            <GrMysql className="size-3 lg:size-5 text-[#00758F]" />
           </div>
 
           {/* MongoDB */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 -bottom-30 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
-            <SiMongodb className="size-5 text-[#47A248]" />
+          <div className="hidden absolute z-10 bg-gradient-to-b from-black to-gray-900 md:right-30 lg:right-40 md:-top-9 lg:-top-15 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl md:flex justify-center items-center animate-float-delayed">
+            <SiMongodb className="size-3 lg:size-5 text-[#47A248]" />
           </div>
 
           {/* Laravel */}
-          <div className="absolute bg-gradient-to-b from-black to-gray-900 right-20 top-5 translate-x-1/2 w-fit p-3 border border-gray-800 text-white rounded-2xl flex justify-center items-center animate-float-delayed">
-            <FaLaravel className="size-5 text-[#FF2D20]" />
+          <div className="hidden absolute z-10 bg-gradient-to-b from-black to-gray-900 md:right-20 lg:right-10 top-5 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl md:flex justify-center items-center animate-float-delayed">
+            <FaLaravel className="size-3 lg:size-5 text-[#FF2D20]" />
+          </div>
+
+          {/* Github */}
+          <div className="hidden absolute z-10 bg-gradient-to-b from-black to-gray-900 -bottom-20 lg:right-20 lg:top-60 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl md:flex justify-center items-center animate-float-delayed">
+            <IoLogoGithub className="size-3 lg:size-5 text-white" />
           </div>
 
           <AnimatedContent direction="horizontal">
@@ -90,38 +95,42 @@ const Hero = () => {
             speed={4}
             className="text-xs md:text-[16px] leading-7"
           />
-          <div className="flex items-center justify-center md:justify-start space-x-4 font-medium">
-            <a href="/Kudae-Sithu-Resume.pdf" download>
-              <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-gray-300 backdrop-blur-3xl">
-                  Download Resume
-                </span>
-              </button>
-            </a>
+          <div className="md:flex space-y-5 md:space-y-0 space-x-0 md:space-x-5 items-center justify-center md:justify-start font-medium">
+            <div>
+              <a href="/Kudae-Sithu-Resume.pdf" download>
+                <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-gray-300 backdrop-blur-3xl">
+                    Download Resume
+                  </span>
+                </button>
+              </a>
+            </div>
 
-            <a
-              href="#work"
-              className="flex justify-center items-center gap-1 cursor-pointer"
-            >
-              <p className="text-xs md:text-[14px] text-gray-300">
-                SEE MY WORKS
-              </p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-6 text-gray-300"
+            <div>
+              <a
+                href="#work"
+                className="flex justify-center items-center gap-1 cursor-pointer"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </a>
+                <p className="text-xs md:text-[14px] text-gray-300">
+                  SEE MY WORKS
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-6 text-gray-300"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
