@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import SplitText from "./ui/split-text";
 import ShinyText from "./ui/shiny-text";
-import AnimatedContent from "./ui/animated-content";
 import Socials from "./Socials";
 import { FaReact } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
@@ -64,7 +63,7 @@ const Hero = () => {
             <IoLogoGithub className="size-3 lg:size-5 text-white" />
           </div>
 
-          <AnimatedContent direction="horizontal">
+          <>
             <Image
               src="/profile.jpg"
               alt="my profile"
@@ -72,7 +71,7 @@ const Hero = () => {
               height={160}
               className="object-cover mx-auto rounded-2xl"
             />
-          </AnimatedContent>
+          </>
         </div>
 
         <div className="space-y-7 text-center md:text-left order-2 md:order-1">
@@ -95,7 +94,7 @@ const Hero = () => {
             speed={4}
             className="text-xs md:text-[16px] leading-7"
           />
-          <div className="md:flex space-y-5 md:space-y-0 space-x-0 md:space-x-5 items-center justify-center md:justify-start font-medium">
+          <div className="md:flex space-y-7 md:space-y-0 space-x-0 md:space-x-5 items-center justify-center md:justify-start font-medium">
             <div>
               <a href="/Kudae-Sithu-Resume.pdf" download>
                 <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">

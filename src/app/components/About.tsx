@@ -22,7 +22,7 @@ const About = () => {
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-24">
           {/* Left Column - Personal Info */}
-          <AnimatedContent direction="horizontal" reverse={true}>
+          <AnimatedContent>
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-4">
@@ -51,7 +51,7 @@ const About = () => {
           </AnimatedContent>
 
           {/* Right Column - Skills & Stats */}
-          <AnimatedContent direction="horizontal">
+          <AnimatedContent>
             <div className="space-y-8">
               {/* Skills */}
               <div>
