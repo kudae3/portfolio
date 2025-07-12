@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth bg-black">
       <body>
         <div className="min-h-screen bg-black">
           <Suspense fallback={<Loading />}>{children}</Suspense>
