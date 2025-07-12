@@ -11,7 +11,6 @@ import { RiNextjsFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
 import { FaLaravel } from "react-icons/fa";
-import { IoLogoGithub } from "react-icons/io";
 import AnimatedContent from "./ui/animated-content";
 
 const Hero = () => {
@@ -57,11 +56,6 @@ const Hero = () => {
           {/* Laravel */}
           <div className="hidden absolute z-10 bg-gradient-to-b from-black to-gray-900 md:right-20 lg:right-10 top-5 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl md:flex justify-center items-center animate-float-delayed">
             <FaLaravel className="size-3 lg:size-5 text-[#FF2D20]" />
-          </div>
-
-          {/* Github */}
-          <div className="hidden absolute z-10 bg-gradient-to-b from-black to-gray-900 -bottom-20 lg:right-20 lg:top-60 translate-x-1/2 w-fit p-2 lg:p-3 border border-gray-800 text-white rounded-2xl md:flex justify-center items-center animate-float-delayed">
-            <IoLogoGithub className="size-3 lg:size-5 text-white" />
           </div>
 
           <AnimatedContent direction="horizontal" reverse={true}>
