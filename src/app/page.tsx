@@ -8,7 +8,9 @@ import ContactMe from "./components/ContactMe";
 const page = () => {
   return (
     <>
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
       <div id="intro">
         <Hero />
       </div>
