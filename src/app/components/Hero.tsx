@@ -98,7 +98,7 @@ const Hero = () => {
           <div className="md:flex space-y-7 md:space-y-0 space-x-0 md:space-x-5 items-center justify-center md:justify-start font-medium">
             <div>
               <a href="/Kudae-Sithu-Resume.pdf" download>
-                <button className="relative inline-flex h-9 md:h-12 overflow-hidden rounded-full p-[1px]">
+                <button className="relative inline-flex h-9 md:h-10 overflow-hidden rounded-full p-[1px]">
                   <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                   <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-xs md:text-[14px] text-gray-300 backdrop-blur-3xl">
                     Download Resume
@@ -110,7 +110,7 @@ const Hero = () => {
             <div>
               <a
                 href="#work"
-                className="flex justify-center items-center gap-1 cursor-pointer"
+                className="flex justify-center items-center space-x-2 cursor-pointer"
               >
                 <p className="text-xs md:text-[14px] text-gray-300">
                   SEE MY WORKS
@@ -119,7 +119,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth="1.5"
+                  strokeWidth={1.7}
                   stroke="currentColor"
                   className="size-6 text-gray-300"
                 >
