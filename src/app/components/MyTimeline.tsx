@@ -5,7 +5,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 function MyTimeline() {
   const data = [
     {
-      title: "2025 Jan - Present",
+      title: "2025 Jan - 2025 Mar",
       content: (
         <div>
           <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-200">
@@ -21,8 +21,8 @@ function MyTimeline() {
             </div>
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
-              Collaborated with designers and backend developers to create
-              responsive and user-friendly interfaces
+              Collaborated with designers and developers to create responsive
+              and user-friendly interfaces
             </div>
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
@@ -33,6 +33,42 @@ function MyTimeline() {
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
               Enhanced application performance and user experience through
               optimization techniques
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2025 Mar - 2025 Oct",
+      content: (
+        <div>
+          <p className="mb-4 text-xs md:text-[16px] font-normal text-neutral-200">
+            Promoted to <strong>Junior Web Developer</strong> at{" "}
+            <strong>Creative Coder Myanmar</strong>.
+          </p>
+          <div className="mb-8 text-xs md:text-[16px] space-y-2 md:space-y-4 list-disc list-inside text-neutral-300">
+            <div>
+              <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
+              Architected and developed a full-stack{" "}
+              <strong>Music Streaming Platform</strong> in collaboration with
+              senior developers, featuring user authentication, playlist
+              management, and real-time audio streaming
+            </div>
+            <div>
+              <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
+              Led frontend development using <strong>Vue.js</strong>,
+              implementing complex state management and responsive UI components
+            </div>
+            <div>
+              <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
+              Integrated <strong>Laravel</strong> backend APIs for seamless data
+              flow and optimized database queries for improved performance
+            </div>
+            <div>
+              <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
+              Mentored intern developers and collaborated cross-functionally
+              with design and backend teams to deliver pixel-perfect,
+              user-centric applications
             </div>
           </div>
         </div>
