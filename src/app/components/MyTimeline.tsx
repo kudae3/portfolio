@@ -1,6 +1,7 @@
 import React from "react";
 import { Timeline } from "./ui/timeline";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import Link from "next/link";
 
 function MyTimeline() {
   const data = [
@@ -50,9 +51,19 @@ function MyTimeline() {
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />
               Architected and developed a full-stack{" "}
-              <strong>Music Streaming Platform</strong> in collaboration with
-              senior developers, featuring user authentication, playlist
-              management, and real-time audio streaming
+              <strong>
+                {" "}
+                <Link
+                  href={"https://djpackmm.com/"}
+                  target="_blank"
+                  className="text-[#8b5cf6] hover:text-[#825cf4] duration-300"
+                >
+                  Music Streaming Platform
+                </Link>
+              </strong>{" "}
+              in collaboration with other developers, featuring user
+              authentication, purchase workflows, downloading tracks, and
+              real-time audio streaming
             </div>
             <div>
               <IoMdCheckmarkCircleOutline className="inline mr-2 text-green-500" />

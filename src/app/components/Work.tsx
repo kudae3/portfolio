@@ -80,14 +80,14 @@ const Work = () => (
 
     <div className="mt-24">
       <h3 className="text-xl font-semibold text-white mb-7 md:mb-10">
-        Things I&apos;ve Built
+        Things I&apos;ve Built (Personal Projects)
       </h3>
       <AnimatedContent>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <article
               key={index}
-              className="overflow-hidden mx-3 sm:m-0 rounded-lg border  shadow-xs border-gray-800 bg-gray-900 shadow-gray-700/25"
+              className="overflow-hidden sm:m-0 rounded-lg border  shadow-xs border-gray-800 bg-gray-900 shadow-gray-700/25"
             >
               <Image
                 alt=""
