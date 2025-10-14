@@ -60,10 +60,10 @@ const Hero = () => {
 
           <AnimatedContent direction="horizontal" reverse={true}>
             <Image
-              src="/profile.jpg"
+              src="/profile3.png"
               alt="my profile"
-              width={160}
-              height={160}
+              width={200}
+              height={200}
               className="object-cover mx-auto rounded-2xl"
             />
           </AnimatedContent>
