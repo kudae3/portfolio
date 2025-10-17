@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Work from "./components/Work";
 import ContactMe from "./components/ContactMe";
+import BottomNav from "./components/BottomNav";
 
 const page = () => {
   return (
@@ -22,6 +23,9 @@ const page = () => {
       </div>
       <div id="contact" className="pt-7 md:pt-28">
         <ContactMe />
+      </div>
+      <div>
+        <BottomNav />
       </div>
     </>
   );
