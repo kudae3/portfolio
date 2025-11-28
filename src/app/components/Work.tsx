@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaReact, FaTelegram } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -12,27 +12,27 @@ import { SiTypescript } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiClerk } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiOllama } from "react-icons/si";
-import { SiPrisma } from "react-icons/si";
+// import { SiOllama } from "react-icons/si";
+// import { SiPrisma } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 import MyTimeline from "./MyTimeline";
 import AnimatedContent from "./ui/animated-content";
 
 const projects = [
-  {
-    title: "AI Chatbot",
-    description:
-      "AI-powered chatbot using Ollama, Qdrant, and Prisma. It supports semantic search and context-aware answers using vector embeddings.",
-    techStack: [
-      <RiNextjsFill key="nextjs" className="text-white text-xl" />,
-      <SiOllama key="ollama" className="text-white text-xl" />,
-      <SiPrisma key="prisma" className="text-black text-xl" />,
-      <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
-      <IoLogoJavascript key="javascript" className="text-yellow-300 text-xl" />,
-    ],
-    image: "/projects/bot.jpg",
-    link: "https://github.com/kudae3/ai_chat_bot",
-  },
+  // {
+  //   title: "AI Chatbot",
+  //   description:
+  //     "AI-powered chatbot using Ollama, Qdrant, and Prisma. It supports semantic search and context-aware answers using vector embeddings.",
+  //   techStack: [
+  //     <RiNextjsFill key="nextjs" className="text-white text-xl" />,
+  //     <SiOllama key="ollama" className="text-white text-xl" />,
+  //     <SiPrisma key="prisma" className="text-black text-xl" />,
+  //     <SiMongodb key="mongodb" className="text-green-500 text-xl" />,
+  //     <IoLogoJavascript key="javascript" className="text-yellow-300 text-xl" />,
+  //   ],
+  //   image: "/projects/bot.jpg",
+  //   link: "https://github.com/kudae3/ai_chat_bot",
+  // },
   {
     title: "Telegram Chatbot",
     description:
