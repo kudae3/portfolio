@@ -36,29 +36,10 @@ const NAV_ITEMS = [
 ];
 
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState("intro");
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      // Hide navbar after scrolling down 500px
-      if (currentScrollY > 500 && currentScrollY > lastScrollY) {
-        setIsVisible(false);
-      }
-      // Show navbar immediately when scrolling up from any position
-      else if (currentScrollY < lastScrollY) {
-        setIsVisible(true);
-      }
-      // Show navbar when at top (less than 500px)
-      else if (currentScrollY <= 500) {
-        setIsVisible(true);
-      }
-
-      setLastScrollY(currentScrollY);
-
       let maxVisible = 0;
       let found = "intro";
       const viewportHeight = window.innerHeight;
@@ -84,14 +65,10 @@ const Navbar = () => {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   return (
-    <footer
-      className={`block md:hidden justify-center items-center bg-black max-w-7xl p-5 mx-auto fixed bottom-0 left-0 right-0 z-50 transition-transform duration-300  ${
-        isVisible ? "translate-y-0" : "translate-y-full"
-      }`}
-    >
+    <footer className="block md:hidden justify-center items-center bg-black max-w-7xl p-5 mx-auto fixed bottom-0 left-0 right-0 z-50">
       <ul className="flex justify-around items-center space-x-7 text-[15px]">
         {NAV_ITEMS.map((item) => (
           <li key={item.id} className="flex flex-col items-center">
