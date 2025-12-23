@@ -21,7 +21,7 @@ const page = () => {
       <div id="work" className="pt-7 md:pt-20">
         <Work />
       </div>
-      <div id="contact" className="pt-7 md:pt-28">
+      <div id="contact" className="pt-7 md:pt-28 pb-7 md:pb-0">
         <ContactMe />
       </div>
       <div>
