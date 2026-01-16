@@ -5,6 +5,7 @@ import About from "./components/About";
 import Work from "./components/Work";
 import ContactMe from "./components/ContactMe";
 import BottomNav from "./components/BottomNav";
+import ChatBot from "./components/ChatBot";
 
 const page = () => {
   return (
@@ -27,6 +28,7 @@ const page = () => {
       <div>
         <BottomNav />
       </div>
+      <ChatBot />
     </>
   );
 };

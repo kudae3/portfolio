@@ -60,7 +60,7 @@ const Hero = () => {
 
           <AnimatedContent direction="horizontal" reverse={true}>
             <Image
-              src="/profile2.png"
+              src="/test.jpg"
               alt="my profile"
               width={200}
               height={200}
