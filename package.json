@@ -10,7 +10,6 @@
     "seed:chroma": "tsx scripts/seed-chromadb.ts"
   },
   "dependencies": {
-    "@chroma-core/default-embed": "^0.1.9",
     "@huggingface/inference": "^4.13.9",
     "@tabler/icons-react": "^3.34.0",
     "axios": "^1.10.0",
