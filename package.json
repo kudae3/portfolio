@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chroma-core/default-embed": "^0.1.9",
     "@huggingface/inference": "^4.13.9",
     "@tabler/icons-react": "^3.34.0",
     "axios": "^1.10.0",
+    "chromadb": "^3.2.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.19.2",
     "gsap": "^3.13.0",
