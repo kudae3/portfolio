@@ -78,20 +78,45 @@ export default function ChatBot() {
     };
 
     setMessages((prev) => [...prev, userMessage]);
+    const userInput = inputValue;
     setInputValue("");
     setIsTyping(true);
 
-    // Simulate bot response (will be replaced with actual RAG implementation)
-    setTimeout(() => {
+    try {
+      // Call the Hugging Face API
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: userInput }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to get response");
+      }
+
+      const data = await response.json();
+
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: "I'm currently learning about Kudae. This feature is being enhanced with AI capabilities!",
+        text: data.reply || "I'm sorry, I couldn't generate a response.",
         sender: "bot",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, botMessage]);
+    } catch (error) {
+      console.error("Error:", error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "Sorry, I'm having trouble connecting right now. Please try again later.",
+        sender: "bot",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
       setIsTyping(false);
-    }, 1000);
+    }
   };
 
   return (
