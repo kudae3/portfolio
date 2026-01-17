@@ -166,7 +166,7 @@ export default function ChatBot() {
           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
         }`}
       >
-        <div className="w-full h-[calc(100vh-2rem)] md:h-[600px] max-h-[calc(100vh-2rem)] bg-gray-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-800 flex flex-col overflow-hidden">
+        <div className="w-full h-[70vh] max-h-[70vh] md:h-[600px] md:max-h-[600px] bg-gray-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-gray-800 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">

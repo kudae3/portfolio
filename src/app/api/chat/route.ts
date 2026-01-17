@@ -31,6 +31,40 @@ export async function POST(request: NextRequest) {
       database: process.env.CHROMA_DATABASE,
     });
 
+    // Hard Reply
+    const text = message.toLowerCase().trim();
+
+    const greetingRegex =
+      /^(hi|hello|hey|hey there|yo|sup|good (morning|afternoon|evening))[\s!.]*$/i;
+
+    if (greetingRegex.test(text)) {
+      return NextResponse.json({
+        reply: "Hi 👋 I'm KudaeBot. What do you want to know about Kudae?",
+      });
+    }
+
+    const thanksRegex =
+      /^(ok|okay|thanks|thank you|thank u|thx|thanks a lot|appreciate it|much appreciated)[\s!.]*$/i;
+
+    if (thanksRegex.test(text)) {
+      return NextResponse.json({
+        reply:
+          "You're welcome 😊 Come here anytime if you want to know about Kudae. You can also contact him directly.",
+      });
+    }
+
+    const goodbyeRegex =
+      /^(bye|goodbye|see you|see ya|later|farewell)[\s!.]*$/i;
+
+    if (goodbyeRegex.test(text)) {
+      return NextResponse.json({
+        reply:
+          "Goodbye 👋 Feel free to come back anytime to learn about Kudae.",
+      });
+    }
+
+    // Start RAG Process
+
     // Step 1: Embed the user's question using the same model
     console.log("🔍 Embedding user question...");
     const queryEmbedding = await embedText(message);
@@ -84,7 +118,7 @@ FOLLOW-UP EXAMPLES:
           content: message,
         },
       ],
-      max_tokens: 400,
+      max_tokens: 300,
       temperature: 0.7,
     });
 
