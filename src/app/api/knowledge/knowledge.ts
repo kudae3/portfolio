@@ -121,7 +121,7 @@ export const portfolioKnowledge: KnowledgeEntry[] = [
   {
     id: "portfolio-chatbot",
     content:
-      "This portfolio is developed by Kudae using a RAG-powered chatbot built with ChromaDB, and Llama AI.",
+      "The AI chatbot on this portfolio was custom-built by Kudae himself, not purchased. He developed it using RAG (Retrieval-Augmented Generation) technology with ChromaDB vector database, HuggingFace embeddings, and Llama AI. It's a fully custom implementation showcasing his AI development skills.",
     category: "ai-skills",
   },
   {

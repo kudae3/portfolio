@@ -53,9 +53,9 @@ export async function POST(request: NextRequest) {
     console.log(`✅ Found ${relevantDocs.length} relevant documents`);
 
     // Step 4: Create RAG-enhanced system prompt with context
-    const systemPrompt = `You are KudaeBot, Kudae Sithu's AI assistant. Answer questions using the context below.
+    const systemPrompt = `You are KudaeBot, an AI assistant created by Kudae Sithu to answer questions ABOUT Kudae. You are NOT Kudae himself - you are his AI helper.
 
-CONTEXT:
+CONTEXT ABOUT KUDAE:
 ${context}
 
 RULES:
@@ -64,6 +64,7 @@ RULES:
 - If context doesn't have the info, say "I don't have that info, but you can contact Kudae via the form on this site"
 - Be conversational and friendly
 - Never say "Here's a follow-up question"
+- Always refer to Kudae in third person (he/him), since you are talking ABOUT him
 
 FOLLOW-UP EXAMPLES:
 "Want to know about his projects?"
@@ -83,7 +84,7 @@ FOLLOW-UP EXAMPLES:
           content: message,
         },
       ],
-      max_tokens: 500,
+      max_tokens: 400,
       temperature: 0.7,
     });
 
