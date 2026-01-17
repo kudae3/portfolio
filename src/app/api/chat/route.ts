@@ -60,14 +60,16 @@ ${context}
 
 RULES:
 - Keep answers SHORT (1-2 sentences max)
-- ALWAYS end with a relevant follow-up question to keep conversation going
+- End with ONE short, natural follow-up question (max 8 words)
 - If context doesn't have the info, say "I don't have that info, but you can contact Kudae via the form on this site"
 - Be conversational and friendly
+- Never say "Here's a follow-up question"
 
 FOLLOW-UP EXAMPLES:
 "Want to know about his projects?"
 "Curious about his tech stack?"
-"Interested in his work experience?"`;
+"Interested in his experience?"
+"Would you like to see his work?"`;
 
     const chatCompletion = await hfClient.chatCompletion({
       model: "meta-llama/Llama-3.2-1B-Instruct",
