@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { IoClose, IoSend, IoChatbubbleEllipses } from "react-icons/io5";
+import { IoClose, IoSend } from "react-icons/io5";
 import { RiRobot2Fill } from "react-icons/ri";
 
 interface Message {
@@ -133,7 +134,7 @@ export default function ChatBot() {
       {/* Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 group transition-all duration-300 ${
+        className={`fixed bottom-16 right-4 md:bottom-10 md:right-10 z-50 group transition-all duration-300 ${
           isOpen ? "scale-0" : "scale-100"
         }`}
         aria-label="Open chat"
@@ -143,8 +144,15 @@ export default function ChatBot() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity"></div>
 
           {/* Button */}
-          <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white p-3 md:p-4 rounded-full shadow-2xl transition-all duration-300 group-hover:scale-110">
-            <IoChatbubbleEllipses className="w-5 h-5 md:w-6 md:h-6" />
+          <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-full shadow-2xl transition-all duration-300 group-hover:scale-110">
+            {/* <IoChatbubbleEllipses className="w-5 h-5 md:w-6 md:h-6" /> */}
+            <Image
+              src="/Robot.gif"
+              alt="Chat Icon"
+              width={30}
+              height={30}
+              className="w-10 h-10 md:w-15 md:h-15"
+            />
           </div>
 
           {/* Pulse animation */}
@@ -162,8 +170,14 @@ export default function ChatBot() {
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-3">
-              <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm">
-                <RiRobot2Fill className="w-5 h-5 text-white" />
+              <div className="bg-white/20 rounded-full backdrop-blur-sm">
+                <Image
+                  src="/Robot.gif"
+                  alt="Chat Icon"
+                  width={30}
+                  height={30}
+                  className="w-10 h-10 md:w-10 md:h-10"
+                />
               </div>
               <div>
                 <h3 className="text-white font-semibold">KudaeBot</h3>
