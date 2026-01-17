@@ -121,17 +121,17 @@ export const portfolioKnowledge: KnowledgeEntry[] = [
   {
     id: "portfolio-chatbot",
     content:
-      "Kudae’s portfolio includes a RAG-powered chatbot built with ChromaDB.",
+      "This portfolio is developed by Kudae using a RAG-powered chatbot built with ChromaDB, and Llama AI.",
     category: "ai-skills",
   },
   {
     id: "experience-intern",
-    content: "Intern Web Developer at Creative Coder Myanmar (Jan–Mar 2025).",
+    content: "Intern Web Developer at Creative Coder Myanmar (Jan-Mar 2025).",
     category: "experience",
   },
   {
     id: "experience-junior",
-    content: "Junior Web Developer at Creative Coder Myanmar (Mar–Oct 2025).",
+    content: "Junior Web Developer at Creative Coder Myanmar (Mar-Oct 2025).",
     category: "experience",
   },
   {
